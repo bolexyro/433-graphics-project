@@ -9,18 +9,20 @@ List<Point<int>> midpointLine(int x0, int y0, int x1, int y1) {
   int d = dy - dx ~/ 2;
   int x = x0, y = y0;
 
+  d = 2 * dy - dx;
+  int dd = 2 * (dy - dx);
+
   points.add(Point(x, y));
 
   while (x < x1) {
     x++;
     if (d < 0) {
-      d = d + dy;
+      d = d + 2 * dy;
     } else {
-      d = d + (dy - dx);
+      d = d + dd;
       y++;
     }
     points.add(Point(x, y));
   }
-
   return points;
 }

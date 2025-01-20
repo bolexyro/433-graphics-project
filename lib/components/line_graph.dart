@@ -34,14 +34,7 @@ class LineGraphWidget extends StatelessWidget {
       child: LineChart(
         LineChartData(
           gridData: const FlGridData(show: true),
-          titlesData: const FlTitlesData(
-              // leftTitles: AxisTitles(
-              //   sideTitles: SideTitles(showTitles: true, reservedSize: 40),
-              // ),
-              // bottomTitles: AxisTitles(
-              //   sideTitles: SideTitles(showTitles: true, reservedSize: 30),
-              // ),
-              show: true),
+          titlesData: const FlTitlesData(show: true),
           borderData: FlBorderData(
             show: true,
             // border: Border.all(color: Colors.black, width: 1),
