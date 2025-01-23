@@ -26,7 +26,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Drawing Algorithms')),
+      backgroundColor: Colors.blue,
+      // appBar: AppBar(title: const Text('Drawing Algorithms')),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),

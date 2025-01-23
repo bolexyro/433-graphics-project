@@ -16,8 +16,12 @@ class CircleGraphWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Stopwatch stopwatch = Stopwatch()..start();
     final circlePoints =
         circleAlgorithm.algorithm(centerPoint[0], centerPoint[1], radius);
+    stopwatch.stop();
+    print(
+        'Circle algorithm execution time: ${stopwatch.elapsedMicroseconds} microseconds');
 
     // Find min and max values to adjust the graph scale
     final xValues = circlePoints.map((p) => p.x).toList();

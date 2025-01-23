@@ -15,7 +15,7 @@ List<Point<int>> ddaLine(int x0, int y0, int x1, int y1) {
   double y = y0.toDouble();
 
   for (int i = 0; i <= steps; i++) {
-    points.add(Point(x.round(), y.round())); // Add the rounded points
+    points.add(Point(x.round(), y.round()));
     x += xIncrement;
     y += yIncrement;
   }
